@@ -1,0 +1,17 @@
+uuid: d83fece5-6f56-4686-9702-b6f1aa4ad3e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Events
+type: events
+description: 'Enter the events from around the Drupalville'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
