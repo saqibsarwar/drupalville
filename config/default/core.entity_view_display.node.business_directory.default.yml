@@ -1,0 +1,28 @@
+uuid: abec6af5-cade-4197-ab5b-0934300d155d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_directory.body
+    - node.type.business_directory
+  module:
+    - text
+    - user
+id: node.business_directory.default
+targetEntityType: node
+bundle: business_directory
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
