@@ -4,9 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.business_directory.body
+    - field.field.node.business_directory.field_business_address
+    - field.field.node.business_directory.field_business_phone
+    - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_image
+    - image.style.thumbnail
     - node.type.business_directory
   module:
+    - image
+    - link
     - path
+    - telephone
     - text
 id: node.business_directory.default
 targetEntityType: node
@@ -28,6 +36,37 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_business_address:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_phone:
+    type: telephone_default
+    weight: 125
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_website:
+    type: link_default
+    weight: 124
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path

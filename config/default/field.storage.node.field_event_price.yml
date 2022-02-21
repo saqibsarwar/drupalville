@@ -1,0 +1,20 @@
+uuid: 3ac3bb77-192b-4df6-b49a-88a8f2261859
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_event_price
+field_name: field_event_price
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

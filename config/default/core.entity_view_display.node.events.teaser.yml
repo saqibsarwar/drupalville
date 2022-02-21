@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_location
+    - field.field.node.events.field_event_price
+    - field.field.node.events.field_event_website
     - node.type.events
   module:
     - text
@@ -27,4 +31,8 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_event_date: true
+  field_event_location: true
+  field_event_price: true
+  field_event_website: true

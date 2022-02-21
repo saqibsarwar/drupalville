@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_location
+    - field.field.node.events.field_event_price
+    - field.field.node.events.field_event_website
     - node.type.events
   module:
+    - datetime
+    - link
     - path
     - text
 id: node.events.default
@@ -28,6 +34,37 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_event_date:
+    type: datetime_default
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_location:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_event_price:
+    type: number
+    weight: 124
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_event_website:
+    type: link_default
+    weight: 125
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path

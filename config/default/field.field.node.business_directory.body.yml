@@ -11,8 +11,8 @@ id: node.business_directory.body
 field_name: body
 entity_type: node
 bundle: business_directory
-label: Body
-description: ''
+label: 'Business Description'
+description: 'Intro provided by the business.'
 required: false
 translatable: true
 default_value: {  }

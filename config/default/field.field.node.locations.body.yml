@@ -11,7 +11,7 @@ id: node.locations.body
 field_name: body
 entity_type: node
 bundle: locations
-label: Body
+label: 'Location Description'
 description: ''
 required: false
 translatable: true

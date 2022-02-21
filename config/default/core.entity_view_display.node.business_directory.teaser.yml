@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.business_directory.body
+    - field.field.node.business_directory.field_business_address
+    - field.field.node.business_directory.field_business_phone
+    - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_image
     - node.type.business_directory
   module:
     - text
@@ -27,4 +31,8 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_business_address: true
+  field_business_phone: true
+  field_business_website: true
+  field_image: true

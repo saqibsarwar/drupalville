@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.locations.body
+    - field.field.node.locations.field_location_address
     - node.type.locations
   module:
     - path
@@ -28,6 +29,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_location_address:
+    type: string_textfield
+    weight: 122
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
