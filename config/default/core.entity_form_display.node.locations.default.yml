@@ -7,8 +7,11 @@ dependencies:
     - field.field.node.locations.field_location_address
     - field.field.node.locations.field_location_amenities
     - field.field.node.locations.field_location_category
+    - field.field.node.locations.field_location_file_downloads
+    - field.field.node.locations.field_location_video
     - node.type.locations
   module:
+    - media_library
     - path
     - text
 id: node.locations.default
@@ -55,6 +58,20 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_location_file_downloads:
+    type: media_library_widget
+    weight: 126
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_location_video:
+    type: media_library_widget
+    weight: 125
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   path:
     type: path

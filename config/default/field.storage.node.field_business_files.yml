@@ -1,0 +1,20 @@
+uuid: ac633a82-d43e-4417-bddb-cd3092777c9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_business_files
+field_name: field_business_files
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

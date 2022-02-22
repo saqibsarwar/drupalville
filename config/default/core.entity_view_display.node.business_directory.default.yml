@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.business_directory.body
     - field.field.node.business_directory.field_business_address
     - field.field.node.business_directory.field_business_category
+    - field.field.node.business_directory.field_business_files
     - field.field.node.business_directory.field_business_phone
     - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
     - node.type.business_directory
   module:
@@ -43,6 +45,15 @@ content:
     third_party_settings: {  }
     weight: 106
     region: content
+  field_business_files:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_business_phone:
     type: basic_string
     label: above
@@ -61,6 +72,15 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_featured_business_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_image:
     type: image

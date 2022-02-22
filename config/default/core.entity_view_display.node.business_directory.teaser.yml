@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.business_directory.body
     - field.field.node.business_directory.field_business_address
     - field.field.node.business_directory.field_business_category
+    - field.field.node.business_directory.field_business_files
     - field.field.node.business_directory.field_business_phone
     - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
     - node.type.business_directory
   module:
@@ -35,6 +37,8 @@ content:
 hidden:
   field_business_address: true
   field_business_category: true
+  field_business_files: true
   field_business_phone: true
   field_business_website: true
+  field_featured_business_video: true
   field_image: true
