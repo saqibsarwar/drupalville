@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_article_keywords
+    - field.field.node.article.field_article_type
     - field.field.node.article.field_image
     - image.style.medium
     - node.type.article
@@ -42,4 +44,6 @@ content:
     region: content
 hidden:
   comment: true
+  field_article_keywords: true
+  field_article_type: true
   field_image: true

@@ -1,0 +1,8 @@
+uuid: e0e62f62-a2f3-4b45-b13d-a16dd0570903
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Keywords'
+vid: article_keywords
+description: ''
+weight: 0

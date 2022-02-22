@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.locations.body
     - field.field.node.locations.field_location_address
+    - field.field.node.locations.field_location_amenities
+    - field.field.node.locations.field_location_category
     - node.type.locations
   module:
     - text
@@ -30,3 +32,5 @@ content:
     region: content
 hidden:
   field_location_address: true
+  field_location_amenities: true
+  field_location_category: true

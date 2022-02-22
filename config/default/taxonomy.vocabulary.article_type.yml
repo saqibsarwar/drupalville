@@ -1,0 +1,8 @@
+uuid: 815279ba-f687-47ef-8c2b-40bd307df72b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Type'
+vid: article_type
+description: 'News or Press Release'
+weight: 0
