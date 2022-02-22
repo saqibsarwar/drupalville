@@ -30,7 +30,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   comment:
     type: comment_default
@@ -39,7 +39,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 110
+    weight: 7
     region: content
   field_article_keywords:
     type: entity_reference_label
@@ -47,7 +47,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 112
+    weight: 4
     region: content
   field_article_type:
     type: entity_reference_label
@@ -55,7 +55,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 111
+    weight: 3
     region: content
   field_image:
     type: image
@@ -64,7 +64,7 @@ content:
       image_link: ''
       image_style: large
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_news_files:
     type: entity_reference_entity_view
@@ -73,7 +73,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 114
+    weight: 6
     region: content
   field_news_video:
     type: entity_reference_entity_view
@@ -82,11 +82,11 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 113
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden: {  }
