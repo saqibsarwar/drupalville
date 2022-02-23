@@ -20,6 +20,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/linkit": "^6.0@beta",
         "drupal/scheduler": "^1.4",
         "drupal/simple_gmap": "^3.0",
         "drush/drush": "^10.2"
