@@ -1,0 +1,22 @@
+uuid: 02cb8187-b952-4164-a073-228474044f8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: business_directory
+label: 'Business Directory'
+type: 'canonical_entities:node'
+pattern: 'business-directory/[node:title]'
+selection_criteria:
+  c68d86ea-30e3-4a3c-8b38-2a4269e6db55:
+    id: node_type
+    negate: false
+    uuid: c68d86ea-30e3-4a3c-8b38-2a4269e6db55
+    context_mapping:
+      node: node
+    bundles:
+      business_directory: business_directory
+selection_logic: and
+weight: -5
+relationships: {  }
