@@ -3,46 +3,58 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.article
+    - node.type.business_directory
+    - node.type.events
+    - node.type.locations
     - node.type.page
-    - taxonomy.vocabulary.tags
   module:
-    - comment
-    - contextual
-    - file
+    - media
     - node
-    - path
+    - scheduler
     - system
-    - taxonomy
     - toolbar
-    - tour
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
 label: 'Content editor'
-weight: 2
+weight: -8
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access content overview'
-  - 'access contextual links'
-  - 'access files overview'
+  - 'access media overview'
   - 'access toolbar'
-  - 'access tour'
-  - 'administer url aliases'
   - 'create article content'
+  - 'create audio media'
+  - 'create business_directory content'
+  - 'create document media'
+  - 'create events content'
+  - 'create image media'
+  - 'create locations content'
   - 'create page content'
-  - 'create terms in tags'
-  - 'create url aliases'
-  - 'delete article revisions'
-  - 'delete own article content'
-  - 'delete own page content'
-  - 'delete page revisions'
-  - 'edit own article content'
-  - 'edit own comments'
-  - 'edit own page content'
-  - 'edit terms in tags'
-  - 'revert all revisions'
-  - 'view all revisions'
+  - 'create remote_video media'
+  - 'create video media'
+  - 'delete any article content'
+  - 'delete any business_directory content'
+  - 'delete any events content'
+  - 'delete any locations content'
+  - 'delete any page content'
+  - 'edit any article content'
+  - 'edit any business_directory content'
+  - 'edit any events content'
+  - 'edit any locations content'
+  - 'edit any page content'
+  - 'schedule publishing of nodes'
+  - 'view article revisions'
+  - 'view business_directory revisions'
+  - 'view events revisions'
+  - 'view locations revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view scheduled content'
   - 'view the administration theme'
