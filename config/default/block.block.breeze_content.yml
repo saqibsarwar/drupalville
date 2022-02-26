@@ -1,0 +1,22 @@
+uuid: 402bf700-e4c1-43c9-aca4-04ac10e867c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - breeze
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: breeze_content
+theme: breeze
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

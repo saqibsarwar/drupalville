@@ -1,0 +1,22 @@
+uuid: 9be75f4d-d208-4dab-8ba1-78d49d7a8fb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - breeze
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: breeze_messages
+theme: breeze
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

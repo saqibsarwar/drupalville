@@ -1,0 +1,22 @@
+uuid: 4a714746-4176-4fac-9a2b-ed50f53d86d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - breeze
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: breeze_local_tasks
+theme: breeze
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
