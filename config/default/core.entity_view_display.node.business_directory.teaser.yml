@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.business_directory.field_image
     - node.type.business_directory
   module:
+    - image
     - text
     - user
 id: node.business_directory.teaser
@@ -27,12 +28,21 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_business_address: true
@@ -41,4 +51,3 @@ hidden:
   field_business_phone: true
   field_business_website: true
   field_featured_business_video: true
-  field_image: true

@@ -1,0 +1,8 @@
+uuid: 41027664-f981-4c67-8c76-3f52456ab4b2
+langcode: en
+status: true
+dependencies: {  }
+id: downloadable_pdf
+label: 'Downloadable PDF'
+revision: 1
+description: ''

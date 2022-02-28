@@ -1,0 +1,30 @@
+uuid: 4fa55712-27d6-4162-aacf-50a9d05098bf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:downloadable_pdf:fb5a266b-ee5b-449d-9138-5bb85a8d632a'
+  module:
+    - block_content
+    - system
+  theme:
+    - breeze
+id: ostrainingdealoftheweek
+theme: breeze
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:fb5a266b-ee5b-449d-9138-5bb85a8d632a'
+settings:
+  id: 'block_content:fb5a266b-ee5b-449d-9138-5bb85a8d632a'
+  label: 'OSTraining Deal of the Week'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /business-directory/ostraining

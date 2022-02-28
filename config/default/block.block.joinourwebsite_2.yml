@@ -1,0 +1,30 @@
+uuid: 01dbe5f2-79d8-4371-9de8-1e864f72a509
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:789aa6a6-cc7c-4f49-89a0-011d2a5f5fae'
+  module:
+    - block_content
+    - system
+  theme:
+    - breeze
+id: joinourwebsite_2
+theme: breeze
+region: footer1
+weight: 0
+provider: null
+plugin: 'block_content:789aa6a6-cc7c-4f49-89a0-011d2a5f5fae'
+settings:
+  id: 'block_content:789aa6a6-cc7c-4f49-89a0-011d2a5f5fae'
+  label: 'Join Our Website!'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
