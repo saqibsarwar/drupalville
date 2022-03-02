@@ -1,0 +1,25 @@
+uuid: 71c788f7-bf16-4bc1-b9b0-f76e3b48e2ad
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:3_media_items:02a5e057-b650-4792-9e69-3ab718638a9e'
+  module:
+    - block_content
+  theme:
+    - breeze
+id: 3columnstest
+theme: breeze
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:02a5e057-b650-4792-9e69-3ab718638a9e'
+settings:
+  id: 'block_content:02a5e057-b650-4792-9e69-3ab718638a9e'
+  label: '3 Columns Test'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

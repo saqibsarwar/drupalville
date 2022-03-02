@@ -1,0 +1,33 @@
+uuid: c80fcc00-b2fe-4196-9c39-294127aecff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.3_media_items
+    - field.storage.block_content.field_3_media_items
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+id: block_content.3_media_items.field_3_media_items
+field_name: field_3_media_items
+entity_type: block_content
+bundle: 3_media_items
+label: '3 Media Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

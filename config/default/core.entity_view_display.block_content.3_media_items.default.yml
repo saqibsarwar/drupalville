@@ -1,0 +1,32 @@
+uuid: b02dd3c2-b26b-4a33-a1de-418f57c21b48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.3_media_items
+    - field.field.block_content.3_media_items.body
+    - field.field.block_content.3_media_items.field_3_media_items
+  module:
+    - text
+id: block_content.3_media_items.default
+targetEntityType: block_content
+bundle: 3_media_items
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_3_media_items:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
