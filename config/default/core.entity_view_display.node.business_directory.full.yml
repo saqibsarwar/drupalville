@@ -1,0 +1,295 @@
+uuid: 8b68c60a-f313-4c14-8caa-4e331d0f992d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.business_directory.body
+    - field.field.node.business_directory.field_business_address
+    - field.field.node.business_directory.field_business_category
+    - field.field.node.business_directory.field_business_files
+    - field.field.node.business_directory.field_business_phone
+    - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_featured_business_video
+    - field.field.node.business_directory.field_image
+    - field.field.node.business_directory.layout_builder__layout
+    - node.type.business_directory
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - telephone
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'top logo and taxonomy fields'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          69aec38d-73dd-4612-a46d-2381e7cce3ef:
+            uuid: 69aec38d-73dd-4612-a46d-2381e7cce3ef
+            region: first
+            configuration:
+              id: 'field_block:node:business_directory:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          159b1502-5665-4799-b75b-d6276a9b11b8:
+            uuid: 159b1502-5665-4799-b75b-d6276a9b11b8
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:field_business_category'
+              label: 'Business Category'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0f1bbfa7-84ab-4877-8c76-8b82d7536127:
+            uuid: 0f1bbfa7-84ab-4877-8c76-8b82d7536127
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:field_business_address'
+              label: 'Business Address'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: simple_gmap
+                label: hidden
+                settings:
+                  include_map: true
+                  include_static_map: false
+                  include_link: true
+                  include_text: true
+                  iframe_height: '200'
+                  iframe_width: '200'
+                  iframe_title: ''
+                  static_scale: 1
+                  zoom_level: 14
+                  link_text: 'View larger map'
+                  map_type: m
+                  langcode: en
+                  apikey: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d1f9d60f-a4fe-47e2-a3f6-647d8401bbe2:
+            uuid: d1f9d60f-a4fe-47e2-a3f6-647d8401bbe2
+            region: first
+            configuration:
+              id: 'field_block:node:business_directory:field_business_website'
+              label: 'Business Website'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: nofollow
+                  target: _blank
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          024571a5-aa87-412c-ad9c-3adda3bc5187:
+            uuid: 024571a5-aa87-412c-ad9c-3adda3bc5187
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:field_business_phone'
+              label: 'Business Phone'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          96073bc7-3bda-4dcb-be84-930a8698c1ba:
+            uuid: 96073bc7-3bda-4dcb-be84-930a8698c1ba
+            region: content
+            configuration:
+              id: 'extra_field_block:node:business_directory:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          abac670f-d112-4291-b211-42eb8cf3cf7d:
+            uuid: abac670f-d112-4291-b211-42eb8cf3cf7d
+            region: content
+            configuration:
+              id: 'field_block:node:business_directory:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          cdfe0fa9-07c3-489c-87ed-9a0a5f11d80d:
+            uuid: cdfe0fa9-07c3-489c-87ed-9a0a5f11d80d
+            region: content
+            configuration:
+              id: 'field_block:node:business_directory:field_featured_business_video'
+              label: 'Featured Business Video'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          2774d7b9-6c83-4a50-9c77-d4515b2d4f78:
+            uuid: 2774d7b9-6c83-4a50-9c77-d4515b2d4f78
+            region: content
+            configuration:
+              id: 'field_block:node:business_directory:field_business_files'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: node.business_directory.full
+targetEntityType: node
+bundle: business_directory
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_business_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_business_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_business_files:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_business_phone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_business_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_featured_business_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true
