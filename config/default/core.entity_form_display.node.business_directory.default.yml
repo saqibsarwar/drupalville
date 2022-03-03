@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.business_directory.field_business_website
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
+    - field.field.node.business_directory.layout_builder__layout
     - image.style.thumbnail
     - node.type.business_directory
   module:
@@ -161,4 +162,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
