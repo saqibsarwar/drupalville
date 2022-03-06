@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image
-    - image.style.thumbnail
+    - image.style.320x480_thumbnail
     - node.type.article
     - system.menu.main
     - taxonomy.vocabulary.article_type
@@ -213,7 +213,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: thumbnail
+            image_style: 320x480_thumbnail
           group_column: ''
           group_columns: {  }
           group_rows: true
