@@ -13,37 +13,106 @@ dependencies:
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
     - field.field.node.business_directory.layout_builder__layout
+    - image.style.thumbnail
     - node.type.business_directory
   module:
     - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          7fb16184-a1e7-458b-993e-f7e045ed2da4:
+            uuid: 7fb16184-a1e7-458b-993e-f7e045ed2da4
+            region: first
+            configuration:
+              id: 'field_block:node:business_directory:field_image'
+              label: 'Business Logo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: media_library
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ff84f779-ab5c-4f0c-94c3-56f8758f2041:
+            uuid: ff84f779-ab5c-4f0c-94c3-56f8758f2041
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:body'
+              label: 'Business Description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c012f2f6-f104-4d51-8816-14e66d47c53a:
+            uuid: c012f2f6-f104-4d51-8816-14e66d47c53a
+            region: second
+            configuration:
+              id: 'extra_field_block:node:business_directory:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.business_directory.teaser
 targetEntityType: node
 bundle: business_directory
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_image:
     type: image
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
+      image_link: content
+      image_style: thumbnail
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden:
   field_business_address: true
