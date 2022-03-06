@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:e529b45f-64fd-4434-9af1-8eab69a2cdb5'
   module:
     - block_content
+    - system
   theme:
     - breeze
 id: welcomeblock
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /test-landing-page
