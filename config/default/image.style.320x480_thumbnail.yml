@@ -1,0 +1,15 @@
+uuid: d6bd2dde-db66-4d4f-b99e-32c61d50437f
+langcode: en
+status: true
+dependencies: {  }
+name: 320x480_thumbnail
+label: '480x320 thumbnail'
+effects:
+  d2c11704-4172-44db-83eb-bcd55881a9da:
+    uuid: d2c11704-4172-44db-83eb-bcd55881a9da
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 320
+      anchor: center-center
