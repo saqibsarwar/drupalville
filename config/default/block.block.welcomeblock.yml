@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /test-landing-page
+    pages: "/test-landing-page\r\n/events-calendar"
