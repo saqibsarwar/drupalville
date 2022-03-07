@@ -48,7 +48,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: content
-                  image_style: hassan_250x250
+                  image_style: 320x480_thumbnail
                 third_party_settings: {  }
             weight: 0
             additional: {  }
