@@ -1,0 +1,15 @@
+uuid: 5a83445e-61f7-4141-936b-6cb43914991c
+langcode: en
+status: true
+dependencies: {  }
+name: hassan_250x250
+label: 'Hassan 250x250'
+effects:
+  47f99b81-234e-46e0-bfb6-3be6772bd565:
+    uuid: 47f99b81-234e-46e0-bfb6-3be6772bd565
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      anchor: center-center
