@@ -35,3 +35,5 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
     ```
 
 When the automated installation is complete the command line output will display the admin username and password.
+
+Test changes while using github.dev.
